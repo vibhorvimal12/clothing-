@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Clothing Store</h1>
+ 
+        <p class>Visitors: <span id="visitorCount">0</span></p>
+    </header>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <h3>Men's Shirts</h3>
+            <img src="shirts.png"Italian Trulli">
+             <p class=""
+            <p>$50</p>
+            <button onclick="addToCart('Unstitched Suit', 50)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Men's T-Shirts</h3>
+            <img src="tshirt.jpg"Italian Trulli">
+            <p>$70</p>
+            <button onclick="addToCart('Stitched Suit', 70)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Suits</h3>
+            <img src="suits.png"Italian Trulli">
+            <p>$100</p>
+            <button onclick="addToCart('Gown', 100)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <p>Total: $<span id="totalAmount">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <div id="feedbackForm" style="display: none;">
+        <h3>Thank you for your purchase! Please leave feedback</h3>
+        <textarea id="feedback" placeholder="Enter your feedback"></textarea><br>
+        <button onclick="classifyFeedback()">Submit Feedback</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
